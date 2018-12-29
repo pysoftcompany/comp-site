@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+{% block head %}
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<title>{% block title %}{% endblock %}**PySoft-sro**</title>
+<style>
+    body {
+    background-color: black;
+    .container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    }
+.parent {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    padding: 50px;}
+
+</style>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1o">
+{% endblock %}
+</head>
+<body> 
+  <div id="content" style="text-align: center; color: #afb1d3; font-family: Roboto" > {% block content %}
+
+  <a href="/"><img style="max-width:110px; margin-top: 1px" src="{{ url_for('static', filename='img/PySoftLogo.png') }}" /></a>
+  <br><hr><br>
+<h1>Welcome!</h1>
+<div class="parent">
+	 <div class="container"><p>PySoft-s.r.o is an independent Software and research company.<br>Our primary focus is on Python, which is one of the most versatile programming languages out there.</p><br>
+	 <p>Using the power of Python and other cutting edge technolgies PySoft-sro focuses mainly on Web Development, Network Programming and other similar applications and software products. </p> </div></div>
+<br>
+<p> Incase of questions and would like to cooperate on projects with PySoft-s.r.o 
+<a style="color: #0d91e1" href="/contact">Contact</a>
+	{% endblock %}</div><br<hr><br><hr><br>
+   <div id="footer" style="color: #0d91e1; text-align: center">
+     {% block footer %}
+     &copy; Copyright 2019 by <a style="color: #0d9e1" href="/">PySoft-s.r.o</a>.<p>
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
