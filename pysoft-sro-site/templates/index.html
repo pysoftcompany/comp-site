@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
 
 <title>{% block title %}{% endblock %}**PySoft-sro**</title>
 <style>
@@ -14,15 +16,8 @@
     .container {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+    font-family: Roboto;
     }
-.parent {
-    height: 500px;
-    width: 300px;
-    position: relative;
-    padding: 50px;}
 
 </style>
 <meta charset="utf-8">
@@ -31,19 +26,117 @@
 {% endblock %}
 </head>
 <body> 
-  <div id="content" style="text-align: center; color: #afb1d3; font-family: Roboto" > {% block content %}
+  <div id="content" style=" color: #e5e7e9; font-size: 1.2em;
+font-weight: 500; font-family: 'Work Sans' > {% block content %}
 
-  <a href="/"><img style="max-width:110px; margin-top: 1px" src="{{ url_for('static', filename='img/PySoftLogo.png') }}" /></a>
-  <br><hr><br>
-<h1>Welcome!</h1>
-<div class="parent">
-	 <div class="container"><p>PySoft-s.r.o is an independent Software and research company.<br>Our primary focus is on Python, which is one of the most versatile programming languages out there.</p><br>
-	 <p>Using the power of Python and other cutting edge technolgies PySoft-sro focuses mainly on Web Development, Network Programming and other similar applications and software products. </p> </div></div>
+  <a href="/"><img style="max-width:110px; margin-top: 1px ; display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', filename='img/PySoftLogo.png') }}" /></a>
+  <br><br>
+<h1 style="color: #1451d4; text-align: center;">PySoft-s.r.o</h1>
+	 <div class="container"><p><span style="color: #1451d4">PySoft-s.r.o </span> is an independent Software and research company.<br>Our primary focus is on Python, which is one of the most versatile programming languages out there.</p><br>
+	 <p>Using the power of Python and other bleeding edge technlogies PySoft-sro focuses mainly on Web Development, Network Programming, Security and other similar applications and software products. </p>
 <br>
-<p> Incase of questions and would like to cooperate on projects with PySoft-s.r.o 
+<p>Our servers run in cloud mainly world class Linux servers which we configure to optimize performance. We use various web server combinations to serve applications in a reliable way. 
+<p>
+ Our source code is managed using Git and processed through GitHub, Git-Lab or Bit-bucket depending on scope of the software. We run Continuous Integration to make sure our processes are going smoothly. As an agile company alongside writing the software we run simultaneously automated tests to find out pain points and resolve any issues in a timely manner. Software is packaged and distributed as a package and per request can be deployed using modern methods like  ansible or fabric. As we walk the talk we have a metric system to monitor performance.
+</p>
+We are passionate about open source and use these technologies to provide the best service , as well as give back to open source community by running independent research and providing training sessions, contributions. </p>
+<p> In case of questions and would like to cooperate on projects with PySoft-s.r.o, connect with us </p>
+
+<p> Be sure to follow us on twitter </p>
+<a href="https://twitter.com/pysoft-sro" target="blank"><img src="{{ url_for('static', filename='img/icons/twitter/twitter-original.svg') }}" alt="twitter" style="width: 3%; height: auto;">
+</div>
+<div style="content-align: center">
+<img src="{{ url_for('static', filename='img/icons/python/python-original.svg') }}"  alt="Python" style="width: 8%; height: auto;">
+
+<img src="{{ url_for('static', filename='img/icons/javascript/javascript-original.svg') }}"  alt="javascript" style="width: 8%; height: auto;">
+
+<img src="{{ url_for('static', filename='img/icons/postgresql/postgresql-original-wordmark.svg') }}"  alt="postgresql" style="width: 8%; height: auto;">
+
+<img src="{{ url_for('static', filename='img/icons/git/git-original-wordmark.svg') }}"  alt="git" style="width: 8%; height: auto;">
+<img src="{{ url_for('static', filename='img/icons/linux/linux-original.svg') }}"  alt="linux" style="width: 8%; height: auto;">
+<img src="{{ url_for('static', filename='img/icons/c/c-original.svg') }}"  alt="C" style="width: 8%; height: auto;">
+<img src="{{ url_for('static', filename='img/icons/java/java-original-wordmark.svg') }}"  alt="java" style="width: 8%; height: auto;">
+<img src="{{ url_for('static', filename='img/icons/redis/redis-original-wordmark.svg') }}"  alt="redis" style="width: 8%; height: auto;">
+</div>
+
+
+<br><br>
+
 <a style="color: #0d91e1" href="/contact">Contact</a>
 	{% endblock %}</div><br<hr><br><hr><br>
    <div id="footer" style="color: #0d91e1; text-align: center">
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center;">
+                <ul class="list-inline">
+                    <li>
+                        <a href="/courses/all">Courses</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/policies/pricing">Pricing</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/showcase">Showcase</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/home/contact">Contact</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/policies/privacy">Privacy</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/home/about">About</a>
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://twitter.com/TalkPython" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://www.facebook.com/talkpython" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            Facebook</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCKPSmMfDsXTKrCZApukcJ7A" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            YouTube</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="https://soundcloud.com/talkpython" target="_blank">
+                            <i class="fab fa-soundcloud"></i>
+                            SoundCloud</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="mailto:contact@talkpython.fm" target="_blank">
+                            <i class="fal fa-envelope"></i>
+                            Email</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy;
+                    <a href="http://pdxwebproperties.com/"
+                    >PDX Web Properties, LLC</a> 2016 - 2019. All Rights
+                    Reserved</p>
+
+                <p class="made-with-love text-muted small">Made with <i class="fa fa-heart"></i> in Portland, OR, USA
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
      {% block footer %}
      &copy; Copyright 2019 by <a style="color: #0d9e1" href="/">PySoft-s.r.o</a>.<p>
       {% endblock %}
