@@ -5,23 +5,28 @@
 
   <style>
     body {
-    background-color: black;
-    .container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px; }
+    background-color: black; }
   </style>
   {% endblock %} 
 
-<div id="content" style="font-family: Roboto;"> {% block content %}
-	<a href="/"><img style="max-width:120px; margin-top: -3px;" src="{{ url_for('static', filename='img/PySoftLogo.png') }}" /></a><br><hr><br>
- <h1>Contact</h1>
- <p class="container">PySoft sro is located in the city of Bratislava physically , but in this age of technology we can be reached virtually from anywhere.
+
+}
+ <div id="content" style=" color: #e5e7e9; font-size: 18px;
+font-weight: 500; font-family: 'Work Sans' > {% block content %}
+
+
+<a href="{{ url_for('index') }}"><img style="max-width:110px; margin-top: 1px ; display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', filename='img/PySoftLogo.png') }}"></a>
+
+
+
+  <br><br>
+  <h1 style="color: #3498db; text-align: center;"> Contact</h1>
  <br><br>
- If you or your company would like to work with PySoft sro in developing a Python software product(web, Networking, Data Science) or <br><br> 
+  <p class="container"><span style="color: #3498db"><a href="/">PySoft-sro</a></span> is located in the city of Bratislava physically , but in this age of technology we can be reached virtually from anywhere.
+ <br><br>
+ If you or your company would like to work with PySoft sro in developing a Python software product(Web, Networking, Security, Data Science) or <br><br> 
 setup an intense in-person programming trainning classes for your or your company's team (classes are taught to a maximum of  5-6 participants at a time. It's a friendly, hands-on experience that allows for flow of ideas and discussion . Besides, you get to experience first hand Bratislava's distinctive old town while learning new tech. You won't be disappointed.)<br>
- Don't hesitate to get in touch.</p></div>
+Don't hesitate to get in touch <a href="mailto:contact@pysoftsro.com?Subject=Hello%20again" target="_top"><i class='fas fa-envelope' style='font-size:20px;color:#3498db'></i></a></p>
+ </div>
 {% endblock %}<br>
 
