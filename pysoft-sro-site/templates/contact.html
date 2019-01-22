@@ -3,30 +3,22 @@
 {% block head %}
   {{ super() }}
 
-  <style>
-    body {
-    background-color: black; }
-  </style>
+    
   {% endblock %} 
 
 
-}
- <div id="content" style=" color: #e5e7e9; font-size: 18px;
-font-weight: 500; font-family: 'Work Sans' > {% block content %}
 
+  {% block content %}
 
-<a href="{{ url_for('index') }}"><img style="max-width:110px; margin-top: 1px ; display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', filename='img/PySoftLogo.png') }}"></a>
-
-
-
+<a href="/"><img style="max-width:110px; margin-top: 1px ; display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', filename='img/PySoftLogo2.png') }}"></a>
   <br><br>
-  <h1 style="color: #3498db; text-align: center;"> Contact</h1>
+  <h1 style="font-size: 46px;font-weight: 700; color: #1c98ec; text-align: center;"> Contact</h1>
  <br><br>
-  <p class="container"><span style="color: #3498db"><a href="/">PySoft-sro</a></span> is located in the city of Bratislava physically , but in this age of technology we can be reached virtually from anywhere.
+  <p class="container"><span style="color:#1c98ec"><a href="/">PySoft-sro</a></span> was first established in the city of Bratislava at the heart of Europe , but in this age of technology we can be reached virtually from anywhere.
  <br><br>
- If you or your company would like to work with PySoft sro in developing a Python software product(Web, Networking, Security, Data Science) or <br><br> 
-setup an intense in-person programming trainning classes for your or your company's team (classes are taught to a maximum of  5-6 participants at a time. It's a friendly, hands-on experience that allows for flow of ideas and discussion . Besides, you get to experience first hand Bratislava's distinctive old town while learning new tech. You won't be disappointed.)<br>
-Don't hesitate to get in touch <a href="mailto:contact@pysoftsro.com?Subject=Hello%20again" target="_top"><i class='fas fa-envelope' style='font-size:20px;color:#3498db'></i></a></p>
+ If you or your company would like to work with PySoft sro in developing a Python software product(Web, Networking, Security, Data Science) be sure we can complete your projects from almost anywhere in Europe remotely or in person; <span style="font-weight: bold; font-style: italic; color:  #1c98ec">Or </span> <br><br> 
+ Setup an intense in-person programming trainning classes for your or your company's team (classes are taught to a maximum of  5-6 participants at a time. It's a friendly, hands-on experience that allows for flow of ideas and discussion . Besides, you get to experience first hand Bratislava's distinctive old town while learning new tech. You won't be disappointed).
+Don't hesitate to get in touch <a href="mailto:contact@pysoftsro.com?Subject=Hello%20again" target="_top"><i class='fas fa-envelope' style='font-size:20px;color:#3498db'></i></a>
  </div>
 {% endblock %}<br>
 

@@ -12,11 +12,31 @@ def contacts():
     return render_template('contact.html')
 
 
+
+@app.route('/courses')
+def courses():
+    return render_template('courses.html')
+
+
+@app.route('/disclaimer')
+def disclaimer():
+    return render_template('disclaimer.html')
+
+
+@app.route('/pricing')
+def pricing():
+    return render_template('pricing.html')
+
+
 @app.route('/email', methods= ['POST', 'GET'])
 def emailing():
     if request.method == 'POST':
         result = request.form
         return render_template("result.html", result = result)
+
+@app.route('/privacy')
+def privacy():
+    return render_template("privacy.html")
 
 
 @app.errorhandler(404)
