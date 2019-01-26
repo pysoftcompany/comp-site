@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block title %}Privacy{% endblock %}
+{% block head %}
+  {{ super() }}
+  {% endblock %} 
+  {% block content %}
+
+<a href="/"><img style="max-width:110px; margin-top: 1px ; display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', filename='img/PySoftLogo2.png') }}"></a>
+  <br><br>
+  <h1 style="font-size: 46px;font-weight: 700; color: #1c98ec; text-align: center;"> Privacy</h1>
+ <br><br>
+ <div class="container">
+     <p><span style="color:#1c98ec">@<a href="/">PySoft s.r.o.</a></span> Eventhough the nature of our business does not involve data collecting if there is a need, We only collect the information you choose to give us, and we process it with your consent, or on another legal basis; we only require the minimum amount of personal information that is necessary to fulfill the purpose of your interaction with us; we don't sell it to third parties; and we only use it as this Privacy Statement describes.We comply with the General Data Protection Regulation (GDPR).</div>{% endblock %}
